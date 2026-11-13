@@ -1,5 +1,7 @@
 # mcp-il-companies
 
+<!-- mcp-name: io.github.olegsher-ds-2025/mcp-il-companies -->
+
 Due diligence on Israeli companies, partnerships, nonprofits (עמותות) and public benefit companies — live from data.gov.il.
 
 **בדיקת נאותות לחברות, שותפויות, עמותות וחל"צ בישראל**
@@ -26,21 +28,29 @@ government open data in plain language. No API key, no scraping — every call g
 
 ## Install
 
+No install needed with [uv](https://docs.astral.sh/uv/):
+
 ```bash
-pip install git+https://github.com/olegsher-ds-2025/mcp-il-companies
+uvx mcp-il-companies
 ```
 
 Claude Desktop / Claude Code (`.mcp.json`):
 
 ```json
-{ "mcpServers": { "il-companies": { "command": "mcp-il-companies" } } }
+{ "mcpServers": { "il-companies": { "command": "uvx", "args": ["mcp-il-companies"] } } }
 ```
+
+Or `pip install mcp-il-companies`, or from source: `pip install git+https://github.com/olegsher-ds-2025/mcp-il-companies`.
+
+Also listed in the official MCP Registry as `io.github.olegsher-ds-2025/mcp-il-companies`.
 
 Run over HTTP (for remote hosting):
 
 ```bash
 MCP_TRANSPORT=http PORT=8000 mcp-il-companies   # → http://localhost:8000/mcp
 ```
+
+Docker: `docker build -t mcp-il-companies . && docker run -p 8000:8000 mcp-il-companies`.
 
 Prefect Horizon entrypoint: `server.py:mcp`.
 

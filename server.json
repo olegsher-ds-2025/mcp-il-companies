@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.olegsher-ds-2025/mcp-il-companies",
+  "title": "Israel Companies Due Diligence",
+  "description": "Due diligence on Israeli companies, partnerships, nonprofits (עמותות) and public benefit companies —",
+  "repository": {
+    "url": "https://github.com/olegsher-ds-2025/mcp-il-companies",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-il-companies",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
