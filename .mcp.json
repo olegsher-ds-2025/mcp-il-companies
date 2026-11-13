@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "il-companies": { "command": "mcp-il-companies" }
+  }
+}
