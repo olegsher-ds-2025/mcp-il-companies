@@ -54,6 +54,15 @@ Docker: `docker build -t mcp-il-companies . && docker run -p 8000:8000 mcp-il-co
 
 Prefect Horizon entrypoint: `server.py:mcp`.
 
+## Verify the package
+
+Releases are built and published by GitHub Actions with PyPI Trusted Publishing — no stored tokens.
+Each release carries PyPI (PEP 740) attestations and a GitHub build-provenance attestation:
+
+```bash
+pip download mcp-il-companies --no-deps -d dl && gh attestation verify dl/*.whl -R olegsher-ds-2025/mcp-il-companies
+```
+
 ## Data sources
 
 - Registrar of Companies — companies (ica_companies)
