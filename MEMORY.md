@@ -12,3 +12,4 @@
 ## Facts
 - data.gov.il CKAN reachable from Claude cloud workspace and cloud hosts (unlike cbs.gov.il)
 - Registry text encodes `"` as `~` — cleaned in ckan.clean_value
+- GitHub Actions workflows should set a read-only token permission baseline and grant publishing permissions only to the publishing job.
