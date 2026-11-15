@@ -10,6 +10,7 @@ from datetime import date
 
 from fastmcp import FastMCP
 
+from . import __version__
 from .ckan import datastore_search, meta
 
 R_COMPANIES = "f004176c-b85f-4542-8901-7b3176f9a054"  # מאגר חברות - רשם החברות
@@ -34,6 +35,7 @@ DS = {
 
 mcp = FastMCP(
     "mcp-il-companies",
+    version=__version__,
     instructions=(
         "Israeli corporate registry lookups. Use find_entity to resolve a name to a registration number, then "
         "entity_profile or due_diligence for details. Numbers starting 51/52 are companies, 55 partnerships, "
