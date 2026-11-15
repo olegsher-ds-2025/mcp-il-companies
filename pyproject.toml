@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-il-companies"
-version = "0.1.1"
+version = "0.1.2"
 description = "Due diligence on Israeli companies, partnerships, nonprofits (עמותות) and public benefit companies — live from data.gov.il"
 readme = "README.md"
 requires-python = ">=3.11"
